@@ -8,6 +8,11 @@ jobs:
       matrix:
         python-version: [2.7, 3.5, 3.6, 3.7, 3.8]
         django-verion: [1.11, 2.0, 2.1, 2.2, 3.0]
+        exclude:
+          - python-version: 2.7
+            django-verion: [2.0, 2.1, 2.2, 3.0]
+          - python-version: 2.5
+            django-verion: 3.0
       fail-fast: false
     steps:
       - uses: actions/checkout@v1

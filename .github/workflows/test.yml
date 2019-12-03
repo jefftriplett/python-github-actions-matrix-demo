@@ -4,7 +4,7 @@ jobs:
   test:
     runs-on: ubuntu-latest
     strategy:
-      max-parallel: 4
+      # max-parallel: 8  # By default, GitHub will maximize the number of jobs run in parallel depending on the available runners on GitHub-hosted virtual machines.
       matrix:
         python-version: [2.7, 3.5, 3.6, 3.7, 3.8]
         django-version: [1.11, 2.0, 2.1, 2.2, 3.0]

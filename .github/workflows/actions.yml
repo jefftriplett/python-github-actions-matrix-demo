@@ -41,7 +41,7 @@ jobs:
           python-version: ${{ matrix.python-version }}
       - name: Echo Python version
         run: |
-          echo "${{ matrix.python-version }} -> ${{ matrix.django-version }}"
+          echo "Python ${{ matrix.python-version }} -> Django ${{ matrix.django-version }}"
           python -m pip install -U pip
           python -m pip install "Django~=${{ matrix.django-version }}.0"
           python --version

@@ -1,12 +1,13 @@
-name: tests
+name: build matrix demo
+
 on: [push]
+
 jobs:
   test:
     runs-on: ubuntu-latest
     strategy:
       # By default, GitHub will maximize the number of jobs run in parallel depending on the available runners on GitHub-hosted virtual machines.
       # max-parallel: 8
-    strategy:
       fail-fast: false
       matrix:
         python-version: ["2.7", "3.5", "3.6", "3.7", "3.8"]

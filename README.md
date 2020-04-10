@@ -3,6 +3,9 @@
   <a href="https://twitter.com/webology" target="_blank">
     <img alt="Twitter: webology" src="https://img.shields.io/twitter/follow/webology.svg?style=social" />
   </a>
+  <a href="https://github.com/jefftriplett/python-github-actions-matrix-demo/actions" target="_blank">
+    <img alt="build matrix demo" src="https://github.com/jefftriplett/python-github-actions-matrix-demo/workflows/build%20matrix%20demo/badge.svg" />
+  </a>
 </p>
 
 > GitHub Actions Matrix example with Python and Django

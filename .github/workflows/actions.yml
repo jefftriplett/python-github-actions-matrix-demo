@@ -6,7 +6,8 @@ jobs:
   test:
     runs-on: ubuntu-latest
     strategy:
-      # By default, GitHub will maximize the number of jobs run in parallel depending on the available runners on GitHub-hosted virtual machines.
+      # By default, GitHub will maximize the number of jobs run in parallel
+      # depending on the available runners on GitHub-hosted virtual machines.
       # max-parallel: 8
       fail-fast: false
       matrix:

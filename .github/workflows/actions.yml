@@ -1,6 +1,6 @@
 name: build matrix demo
 
-on: [push]
+on: [push, pull_request]
 
 jobs:
   test:
@@ -16,7 +16,7 @@ jobs:
           - "3.6"
           - "3.7"
           - "3.8"
-          # - "3.9"
+          - "3.9"
         django-version:
           - "1.11"
           - "2.0"
@@ -44,22 +44,22 @@ jobs:
           - python-version: "3.8"
             django-version: "2.1"
           # Python 3.9 is compatible with Django 3.1+
-          # - python-version: "3.9"
-          #   django-version: "1.11"
-          # - python-version: "3.9"
-          #   django-version: "2.0"
-          # - python-version: "3.9"
-          #   django-version: "2.1"
-          # - python-version: "3.9"
-          #   django-version: "2.2"
-          # - python-version: "3.9"
-          #   django-version: "3.0"
+          - python-version: "3.9"
+            django-version: "1.11"
+          - python-version: "3.9"
+            django-version: "2.0"
+          - python-version: "3.9"
+            django-version: "2.1"
+          - python-version: "3.9"
+            django-version: "2.2"
+          - python-version: "3.9"
+            django-version: "3.0"
 
     steps:
-      - uses: actions/checkout@v1
+      - uses: actions/checkout@v2
 
       - name: Set up Python ${{ matrix.python-version }}
-        uses: actions/setup-python@v1
+        uses: actions/setup-python@v2
         with:
           python-version: ${{ matrix.python-version }}
 

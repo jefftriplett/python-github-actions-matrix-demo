@@ -14,7 +14,7 @@ This repository is an example of how to use [GitHub Actions Matrix feature](http
 
 Our demo installs Python versions 2.7, 3.6, 3.7, 3.8, and 3.9 and installed Django versions 1.11, 2.0, 2.1, 2.2, and 3.0 and uses the `matrix` feature to only install Django into Python versions which are supported. 
 
-See my [actions.yml workflow](https://github.com/jefftriplett/python-github-actions-matrix-demo/blob/master/.github/workflows/actions.yml) for the matrix example.
+See my [actions.yml workflow](https://github.com/jefftriplett/python-github-actions-matrix-demo/blob/main/.github/workflows/actions.yml) for the matrix example.
 
 
 ### 🏠 [Homepage](https://github.com/jefftriplett/python-github-actions-matrix-demo)

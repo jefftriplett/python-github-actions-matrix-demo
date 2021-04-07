@@ -17,6 +17,7 @@ jobs:
           - "3.7"
           - "3.8"
           - "3.9"
+          - "3.10-dev"
         django-version:
           - "1.11"  # LTS
           - "2.0"
@@ -57,6 +58,19 @@ jobs:
             django-version: "2.2"
           - python-version: "3.9"
             django-version: "3.0"
+          # Python 3.10 is compatible with Django 3.1+
+          - python-version: "3.10-dev"
+            django-version: "1.11"
+          - python-version: "3.10-dev"
+            django-version: "2.0"
+          - python-version: "3.10-dev"
+            django-version: "2.1"
+          - python-version: "3.10-dev"
+            django-version: "2.2"
+          - python-version: "3.10-dev"
+            django-version: "3.0"
+          - python-version: "3.10-dev"
+            django-version: "3.1"
 
     steps:
       - uses: actions/checkout@v2

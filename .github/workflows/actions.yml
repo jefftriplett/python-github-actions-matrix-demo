@@ -1,7 +1,8 @@
 name: build matrix demo
 
 on:
-  push: [main]
+  push: 
+    branches: [main]
   pull_request:
 
 jobs:

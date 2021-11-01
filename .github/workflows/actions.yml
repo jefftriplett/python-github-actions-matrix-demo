@@ -29,7 +29,7 @@ jobs:
           - "3.0.0"
           - "3.1.0"
           - "3.2.0"  # LTS
-          - "4.0a1"
+          - "4.0b1"
         exclude:
           # Python 2.7 is compatible with Django 1.11
           - python-version: "2.7"
@@ -45,13 +45,13 @@ jobs:
           - python-version: "2.7"
             django-version: "3.2.0"
           - python-version: "2.7"
-            django-version: "4.0a1"
-          # Python 3.6 is compatible with Django 4.0a1
+            django-version: "4.0b1"
+          # Python 3.6 is compatible with Django 4.0b1
           - python-version: "3.6"
-            django-version: "4.0a1"
-          # Python 3.7 is compatible with Django 4.0a1
+            django-version: "4.0b1"
+          # Python 3.7 is compatible with Django 4.0b1
           - python-version: "3.7"
-            django-version: "4.0a1"
+            django-version: "4.0b1"
           # Python 3.8 is compatible with Django 2.2+
           - python-version: "3.8"
             django-version: "1.11.0"

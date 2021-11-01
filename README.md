@@ -15,7 +15,7 @@ This repository is an example of how to use [GitHub Actions Matrix feature](http
 
 Our demo uses the `matrix` feature to install:
 - Python versions: 2.7, 3.6, 3.7, 3.8, 3.9, and 3.10
-- Django versions: 1.11, 2.0, 2.1, 2.2, 3.0, 3.1, 3.2, and 4.0a1
+- Django versions: 1.11 (LTS), 2.0, 2.1, 2.2 (LTS), 3.0, 3.1, 3.2 (LTS), and 4.0a1
 
 See the [actions.yml workflow](https://github.com/jefftriplett/python-github-actions-matrix-demo/blob/main/.github/workflows/actions.yml) for the matrix example.
 

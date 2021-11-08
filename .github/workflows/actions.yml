@@ -84,7 +84,6 @@ jobs:
             python-version: '3.9'
           - django-version: '4.0b1'
             python-version: '3.10'
-        #   - '4.0b1'
 
         # python-version:
         #   - '2.7'
@@ -173,12 +172,12 @@ jobs:
           echo "Django Version: ${{ matrix.django-version }}"
           echo "Python Version: ${{ matrix.python-version }}"
 
-      # - name: Upgrade django version
-      #   run: |
-      #     python -m pip install 'Django~=${{ matrix.django-version }}'
+      - name: Upgrade django version
+        run: |
+          python -m pip install "Django~=${{ matrix.django-version }}"
 
-      # - name: Python and Django versions
-      #   run: |
-      #     echo 'Python ${{ matrix.python-version }} -> Django ${{ matrix.django-version }}'
-      #     python --version
-      #     echo "Django: `django-admin --version`"
+      - name: Python and Django versions
+        run: |
+          echo "Python ${{ matrix.python-version }} -> Django ${{ matrix.django-version }}"
+          python --version
+          echo "Django: `django-admin --version`"

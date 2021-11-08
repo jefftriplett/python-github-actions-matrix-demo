@@ -174,10 +174,10 @@ jobs:
 
       - name: Upgrade django version
         run: |
-          python -m pip install Django~=${{ matrix.django-version }}
+          python -m pip install 'Django~=${{ matrix.django-version }}'
 
       - name: Python and Django versions
         run: |
-          echo "Python ${{ matrix.python-version }} -> Django ${{ matrix.django-version }}"
+          echo 'Python ${{ matrix.python-version }} -> Django ${{ matrix.django-version }}'
           python --version
           echo "Django: `django-admin --version`"

@@ -1,4 +1,4 @@
-wname: build matrix demo
+name: build matrix demo
 
 on:
   push:

@@ -5,7 +5,7 @@
     <img alt="Twitter: webology" src="https://img.shields.io/twitter/follow/webology.svg?style=social" />
   </a>
   <a href="https://github.com/jefftriplett/python-github-actions-matrix-demo/actions/workflows/actions.yml" target="_blank">
-    <img alt="build matrix demo" src="https://github.com/jefftriplett/python-github-actions-matrix-demo/actions/workflows/actions.yml/badge.svg)" />
+    <img alt="build matrix demo" src="https://github.com/jefftriplett/python-github-actions-matrix-demo/actions/workflows/actions.yml/badge.svg" />
   </a>
 </p>
 
